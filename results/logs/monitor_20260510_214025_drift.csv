@@ -1,0 +1,1 @@
+wall_time_iso,monotonic_s,t_elapsed_s,true_altitude_m,reported_lidar_m,lidar_quality,ekf_altitude_m,vertical_velocity_mps,last_statustext

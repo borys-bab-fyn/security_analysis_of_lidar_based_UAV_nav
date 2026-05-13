@@ -1,0 +1,8 @@
+[94m[i][0m auto-selected latest ULog: /home/borys/CS/final_project/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-04-23/11_10_54.ulg
+[92m[✓][0m loaded 105 rows from /home/borys/CS/final_project/lidar_scripts/logs/monitor_20260423_121722_oscillation.csv
+[92m[✓][0m loaded ULog /home/borys/CS/final_project/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-04-23/11_10_54.ulg  [topics: vehicle_local_position, distance_sensor, estimator_innovations, estimator_innovation_test_ratios, estimator_status_flags, vehicle_air_data, estimator_status]
+[92m[✓][0m wrote /home/borys/CS/final_project/lidar_scripts/results/20260423_121722_oscillation/20260423_121817_oscillation_01_altitude_sources.png
+[92m[✓][0m wrote /home/borys/CS/final_project/lidar_scripts/results/20260423_121722_oscillation/20260423_121817_oscillation_02_ekf_innovations.png
+[92m[✓][0m wrote /home/borys/CS/final_project/lidar_scripts/results/20260423_121722_oscillation/20260423_121817_oscillation_03_height_source.png
+[92m[✓][0m wrote /home/borys/CS/final_project/lidar_scripts/results/20260423_121722_oscillation/20260423_121817_oscillation_summary.txt
+[92m[✓][0m analysis complete — 4 artefacts in /home/borys/CS/final_project/lidar_scripts/results/20260423_121722_oscillation

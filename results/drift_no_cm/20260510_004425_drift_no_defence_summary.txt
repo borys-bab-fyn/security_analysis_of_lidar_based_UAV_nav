@@ -1,0 +1,14 @@
+LiDAR injection analysis summary
+generated : 2026-05-10 00:44:25
+csv       : drift_baseline.csv
+  true_altitude_m         n=186  mean=-335.722  std=112.421  min=-485.296  max=2.524
+  reported_lidar_m        n=182  mean=4.169  std=0.747  min=2.500  max=4.750
+  ekf_altitude_m          n=186  mean=-334.454  std=114.668  min=-485.132  max=2.524
+ulog      : /home/borys/CS/final_project/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-05-09/23_28_29.ulg
+  topic vehicle_local_position                  rows=118840
+  topic distance_sensor                         rows=11993
+  topic estimator_innovations                   rows=95072
+  topic estimator_innovation_test_ratios        rows=95072
+  topic estimator_status_flags                  rows=961
+  topic vehicle_air_data                        rows=19014
+  topic estimator_status                        rows=95072

@@ -1,0 +1,60 @@
+[94m[*][0m listening on udpin:127.0.0.1:14550 …
+[92m[+][0m MAVLink listener open, waiting for messages.
+[95m[>][0m monitoring… Ctrl+C to stop. log: /home/borys/CS/final_project/lidar_scripts/logs/monitor_20260423_121722_oscillation.csv
+[2mt=   0.00s[0m  true_alt=[97m[2mn/a[0m[0m  lidar=[2mno DISTANCE_SENSOR[0m  q=[2mn/a[0m  ekf_alt=[96m6.40 m[0m  vz=[2mn/a[0m
+[92m[+][0m first HEARTBEAT received (sys=1, comp=1).
+[2mt=   1.00s[0m  true_alt=[97m6.40 m[0m  lidar=[2mno DISTANCE_SENSOR[0m  q=[2mn/a[0m  ekf_alt=[96m6.40 m[0m  vz=0.01 m/s
+[2mt=   2.01s[0m  true_alt=[97m6.40 m[0m  lidar=[2mno DISTANCE_SENSOR[0m  q=[2mn/a[0m  ekf_alt=[96m6.40 m[0m  vz=0.01 m/s
+[2mt=   3.01s[0m  true_alt=[97m6.40 m[0m  lidar=[2mno DISTANCE_SENSOR[0m  q=[2mn/a[0m  ekf_alt=[96m6.40 m[0m  vz=0.00 m/s
+[2mt=   4.01s[0m  true_alt=[97m6.40 m[0m  lidar=[2mno DISTANCE_SENSOR[0m  q=[2mn/a[0m  ekf_alt=[96m6.40 m[0m  vz=0.01 m/s
+[2mt=   5.02s[0m  true_alt=[97m6.40 m[0m  lidar=[2mno DISTANCE_SENSOR[0m  q=[2mn/a[0m  ekf_alt=[96m6.40 m[0m  vz=0.01 m/s
+[2mt=   6.02s[0m  true_alt=[97m6.40 m[0m  lidar=[93m2.50 m[0m  q=100  ekf_alt=[96m6.40 m[0m  vz=0.00 m/s
+[2mt=   7.02s[0m  true_alt=[97m6.40 m[0m  lidar=[93m2.50 m[0m  q=100  ekf_alt=[96m6.40 m[0m  vz=0.01 m/s
+[2mt=   8.02s[0m  true_alt=[97m6.39 m[0m  lidar=[93m2.50 m[0m  q=100  ekf_alt=[96m6.40 m[0m  vz=0.03 m/s
+[2mt=   9.02s[0m  true_alt=[97m7.87 m[0m  lidar=[93m2.50 m[0m  q=100  ekf_alt=[96m7.08 m[0m  vz=-0.95 m/s
+[2mt=  10.02s[0m  true_alt=[97m6.04 m[0m  lidar=[91m2.50 m (stale 2.0s)[0m  q=100  ekf_alt=[96m7.06 m[0m  vz=-0.24 m/s
+[2mt=  11.03s[0m  true_alt=[97m7.48 m[0m  lidar=[93m2.59 m[0m  q=100  ekf_alt=[96m6.67 m[0m  vz=0.15 m/s
+[2mt=  12.03s[0m  true_alt=[97m6.43 m[0m  lidar=[93m2.59 m[0m  q=100  ekf_alt=[96m7.43 m[0m  vz=-0.47 m/s
+[2mt=  13.03s[0m  true_alt=[97m8.20 m[0m  lidar=[93m2.59 m[0m  q=100  ekf_alt=[96m6.77 m[0m  vz=1.19 m/s
+[2mt=  14.03s[0m  true_alt=[97m5.78 m[0m  lidar=[93m2.59 m[0m  q=100  ekf_alt=[96m7.03 m[0m  vz=-0.09 m/s
+[2mt=  15.04s[0m  true_alt=[97m7.93 m[0m  lidar=[93m2.69 m[0m  q=100  ekf_alt=[96m7.24 m[0m  vz=-0.52 m/s
+[2mt=  16.04s[0m  true_alt=[97m5.76 m[0m  lidar=[93m2.69 m[0m  q=100  ekf_alt=[96m6.47 m[0m  vz=0.09 m/s
+[2mt=  17.04s[0m  true_alt=[97m7.94 m[0m  lidar=[93m2.78 m[0m  q=100  ekf_alt=[96m7.39 m[0m  vz=-0.77 m/s
+[2mt=  18.05s[0m  true_alt=[97m5.82 m[0m  lidar=[93m2.78 m[0m  q=100  ekf_alt=[96m6.37 m[0m  vz=0.20 m/s
+[2mt=  19.05s[0m  true_alt=[97m7.97 m[0m  lidar=[93m2.78 m[0m  q=100  ekf_alt=[96m7.46 m[0m  vz=-0.69 m/s
+[2mt=  20.05s[0m  true_alt=[97m5.80 m[0m  lidar=[93m2.78 m[0m  q=100  ekf_alt=[96m6.40 m[0m  vz=0.04 m/s
+[2mt=  21.06s[0m  true_alt=[97m8.05 m[0m  lidar=[93m3.05 m[0m  q=100  ekf_alt=[96m7.53 m[0m  vz=-0.32 m/s
+[2mt=  22.06s[0m  true_alt=[97m5.81 m[0m  lidar=[93m3.05 m[0m  q=100  ekf_alt=[96m6.37 m[0m  vz=0.08 m/s
+[2mt=  23.07s[0m  true_alt=[97m8.14 m[0m  lidar=[93m3.05 m[0m  q=100  ekf_alt=[96m7.50 m[0m  vz=0.08 m/s
+[2mt=  24.07s[0m  true_alt=[97m5.80 m[0m  lidar=[93m3.05 m[0m  q=100  ekf_alt=[96m6.46 m[0m  vz=0.06 m/s
+[2mt=  25.07s[0m  true_alt=[97m8.13 m[0m  lidar=[93m3.14 m[0m  q=100  ekf_alt=[96m7.50 m[0m  vz=0.05 m/s
+[2mt=  26.07s[0m  true_alt=[97m5.80 m[0m  lidar=[93m3.14 m[0m  q=100  ekf_alt=[96m6.36 m[0m  vz=0.15 m/s
+[2mt=  27.07s[0m  true_alt=[97m8.07 m[0m  lidar=[93m3.14 m[0m  q=100  ekf_alt=[96m7.54 m[0m  vz=-0.15 m/s
+[2mt=  28.07s[0m  true_alt=[97m5.80 m[0m  lidar=[93m3.14 m[0m  q=100  ekf_alt=[96m6.25 m[0m  vz=0.16 m/s
+[2mt=  29.08s[0m  true_alt=[97m8.06 m[0m  lidar=[93m3.22 m[0m  q=100  ekf_alt=[96m7.61 m[0m  vz=-0.21 m/s
+[2mt=  30.08s[0m  true_alt=[97m5.80 m[0m  lidar=[93m3.22 m[0m  q=100  ekf_alt=[96m6.18 m[0m  vz=0.15 m/s
+[2mt=  31.08s[0m  true_alt=[97m8.08 m[0m  lidar=[93m3.30 m[0m  q=100  ekf_alt=[96m7.64 m[0m  vz=-0.18 m/s
+[2mt=  32.08s[0m  true_alt=[97m5.82 m[0m  lidar=[93m3.30 m[0m  q=100  ekf_alt=[96m6.13 m[0m  vz=0.17 m/s
+[2mt=  33.08s[0m  true_alt=[97m8.10 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m7.71 m[0m  vz=-0.14 m/s
+[2mt=  34.09s[0m  true_alt=[97m5.81 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m6.08 m[0m  vz=0.17 m/s
+[2mt=  35.09s[0m  true_alt=[97m8.10 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m7.72 m[0m  vz=-0.14 m/s
+[2mt=  36.09s[0m  true_alt=[97m5.82 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m6.07 m[0m  vz=0.19 m/s
+[2mt=  37.10s[0m  true_alt=[97m8.11 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m7.72 m[0m  vz=-0.11 m/s
+[2mt=  38.10s[0m  true_alt=[97m5.82 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m6.09 m[0m  vz=0.18 m/s
+[2mt=  39.10s[0m  true_alt=[97m8.10 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m7.72 m[0m  vz=-0.17 m/s
+[2mt=  40.11s[0m  true_alt=[97m5.86 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m6.05 m[0m  vz=0.27 m/s
+[2mt=  41.11s[0m  true_alt=[97m8.10 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m7.73 m[0m  vz=-0.13 m/s
+[2mt=  42.11s[0m  true_alt=[97m5.84 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m6.04 m[0m  vz=0.22 m/s
+[2mt=  43.11s[0m  true_alt=[97m8.10 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m7.75 m[0m  vz=-0.18 m/s
+[2mt=  44.11s[0m  true_alt=[97m5.88 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m6.03 m[0m  vz=0.30 m/s
+[2mt=  45.11s[0m  true_alt=[97m8.11 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m7.76 m[0m  vz=-0.16 m/s
+[2mt=  46.11s[0m  true_alt=[97m5.86 m[0m  lidar=[93m3.46 m[0m  q=100  ekf_alt=[96m6.03 m[0m  vz=0.26 m/s
+[2mt=  47.11s[0m  true_alt=[97m8.12 m[0m  lidar=[93m3.53 m[0m  q=100  ekf_alt=[96m7.77 m[0m  vz=-0.11 m/s
+[2mt=  48.11s[0m  true_alt=[97m5.85 m[0m  lidar=[93m3.53 m[0m  q=100  ekf_alt=[96m6.04 m[0m  vz=0.24 m/s
+[2mt=  49.11s[0m  true_alt=[97m8.10 m[0m  lidar=[93m3.53 m[0m  q=100  ekf_alt=[96m7.78 m[0m  vz=-0.18 m/s
+[2mt=  50.11s[0m  true_alt=[97m5.87 m[0m  lidar=[93m3.53 m[0m  q=100  ekf_alt=[96m5.98 m[0m  vz=0.29 m/s
+[2mt=  51.11s[0m  true_alt=[97m8.11 m[0m  lidar=[93m3.53 m[0m  q=100  ekf_alt=[96m7.80 m[0m  vz=-0.17 m/s
+[2mt=  52.12s[0m  true_alt=[97m7.79 m[0m  lidar=[93m3.53 m[0m  q=100  ekf_alt=[96m7.80 m[0m  vz=0.13 m/s
+
+[93m[!][0m signal 2 received — stopping.
+[92m[✓][0m monitor stopped after 53.04s. log: /home/borys/CS/final_project/lidar_scripts/logs/monitor_20260423_121722_oscillation.csv

@@ -1,0 +1,58 @@
+[96m[1m========================================================================[0m
+[96m[1m  PX4 SITL LiDAR Injection Attack Toolkit[0m
+[96m[1m========================================================================[0m
+  [97mmode     :[0m [93moscillation[0m
+  [97mduration :[0m 45.0 s
+  [97mrate     :[0m 50.0 Hz
+  [97mendpoint :[0m udpout:127.0.0.1:14580
+  [97msensor   :[0m Garmin LiDAR-Lite v3 (5 cm – 40 m, type=0 laser, orientation=25 down)
+[96m------------------------------------------------------------------------[0m
+[94m[*][0m opening MAVLink endpoint udpout:127.0.0.1:14580 …
+[92m[+][0m MAVLink connection opened (sysid=1, compid=191).
+[95m[>] injecting 'oscillation' @ 50.0 Hz for 45.0s … (Ctrl+C to abort)[0m
+  [2mt=  1.00s[0m  [93moscillation[0m  dist=[97m  2.50 m[0m  q=100  sent=51
+  [2mt=  2.02s[0m  [93moscillation[0m  dist=[97m  2.60 m[0m  q=100  sent=102
+  [2mt=  3.04s[0m  [93moscillation[0m  dist=[97m  2.31 m[0m  q=100  sent=153
+  [2mt=  4.06s[0m  [93moscillation[0m  dist=[97m  2.78 m[0m  q=100  sent=204
+  [2mt=  5.08s[0m  [93moscillation[0m  dist=[97m  2.13 m[0m  q=100  sent=255
+  [2mt=  6.10s[0m  [93moscillation[0m  dist=[97m  2.96 m[0m  q=100  sent=306
+  [2mt=  7.12s[0m  [93moscillation[0m  dist=[97m  1.95 m[0m  q=100  sent=357
+  [2mt=  8.12s[0m  [93moscillation[0m  dist=[97m  3.05 m[0m  q=100  sent=407
+  [2mt=  9.14s[0m  [93moscillation[0m  dist=[97m  1.86 m[0m  q=100  sent=458
+  [2mt= 10.16s[0m  [93moscillation[0m  dist=[97m  3.22 m[0m  q=100  sent=509
+  [2mt= 11.16s[0m  [93moscillation[0m  dist=[97m  1.78 m[0m  q=100  sent=559
+  [2mt= 12.18s[0m  [93moscillation[0m  dist=[97m  3.30 m[0m  q=100  sent=610
+  [2mt= 13.18s[0m  [93moscillation[0m  dist=[97m  1.70 m[0m  q=100  sent=660
+  [2mt= 14.20s[0m  [93moscillation[0m  dist=[97m  3.38 m[0m  q=100  sent=711
+  [2mt= 15.20s[0m  [93moscillation[0m  dist=[97m  1.62 m[0m  q=100  sent=761
+  [2mt= 16.20s[0m  [93moscillation[0m  dist=[97m  3.38 m[0m  q=100  sent=811
+  [2mt= 17.22s[0m  [93moscillation[0m  dist=[97m  1.54 m[0m  q=100  sent=862
+  [2mt= 18.22s[0m  [93moscillation[0m  dist=[97m  3.46 m[0m  q=100  sent=912
+  [2mt= 19.22s[0m  [93moscillation[0m  dist=[97m  1.54 m[0m  q=100  sent=962
+  [2mt= 20.24s[0m  [93moscillation[0m  dist=[97m  3.53 m[0m  q=100  sent=1013
+  [2mt= 21.24s[0m  [93moscillation[0m  dist=[97m  1.47 m[0m  q=100  sent=1063
+  [2mt= 22.24s[0m  [93moscillation[0m  dist=[97m  3.53 m[0m  q=100  sent=1113
+  [2mt= 23.26s[0m  [93moscillation[0m  dist=[97m  1.41 m[0m  q=100  sent=1164
+  [2mt= 24.28s[0m  [93moscillation[0m  dist=[97m  3.66 m[0m  q=100  sent=1215
+  [2mt= 25.28s[0m  [93moscillation[0m  dist=[97m  1.34 m[0m  q=100  sent=1265
+  [2mt= 26.30s[0m  [93moscillation[0m  dist=[97m  3.71 m[0m  q=100  sent=1316
+  [2mt= 27.32s[0m  [93moscillation[0m  dist=[97m  1.23 m[0m  q=100  sent=1367
+  [2mt= 28.34s[0m  [93moscillation[0m  dist=[97m  3.81 m[0m  q=100  sent=1418
+  [2mt= 29.34s[0m  [93moscillation[0m  dist=[97m  1.19 m[0m  q=100  sent=1468
+  [2mt= 30.36s[0m  [93moscillation[0m  dist=[97m  3.86 m[0m  q=100  sent=1519
+  [2mt= 31.36s[0m  [93moscillation[0m  dist=[97m  1.14 m[0m  q=100  sent=1569
+  [2mt= 32.38s[0m  [93moscillation[0m  dist=[97m  3.89 m[0m  q=100  sent=1620
+  [2mt= 33.38s[0m  [93moscillation[0m  dist=[97m  1.11 m[0m  q=100  sent=1670
+  [2mt= 34.38s[0m  [93moscillation[0m  dist=[97m  3.90 m[0m  q=100  sent=1720
+  [2mt= 35.40s[0m  [93moscillation[0m  dist=[97m  1.07 m[0m  q=100  sent=1771
+  [2mt= 36.40s[0m  [93moscillation[0m  dist=[97m  3.93 m[0m  q=100  sent=1821
+  [2mt= 37.42s[0m  [93moscillation[0m  dist=[97m  1.05 m[0m  q=100  sent=1872
+  [2mt= 38.44s[0m  [93moscillation[0m  dist=[97m  3.97 m[0m  q=100  sent=1923
+  [2mt= 39.44s[0m  [93moscillation[0m  dist=[97m  1.03 m[0m  q=100  sent=1973
+  [2mt= 40.46s[0m  [93moscillation[0m  dist=[97m  3.99 m[0m  q=100  sent=2024
+  [2mt= 41.48s[0m  [93moscillation[0m  dist=[97m  1.00 m[0m  q=100  sent=2075
+  [2mt= 42.48s[0m  [93moscillation[0m  dist=[97m  4.00 m[0m  q=100  sent=2125
+  [2mt= 43.48s[0m  [93moscillation[0m  dist=[97m  1.00 m[0m  q=100  sent=2175
+  [2mt= 44.50s[0m  [93moscillation[0m  dist=[97m  4.00 m[0m  q=100  sent=2226
+[92m[✓][0m injection finished: 2250 samples in 45.00s (50.0 Hz effective)
+[92m[✓][0m log written to /home/borys/CS/final_project/lidar_scripts/logs/injector_20260423_121722_oscillation.csv

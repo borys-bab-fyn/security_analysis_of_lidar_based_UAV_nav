@@ -1,0 +1,73 @@
+[96m[1m========================================================================[0m
+[96m[1m  PX4 SITL LiDAR Injection Attack Toolkit[0m
+[96m[1m========================================================================[0m
+  [97mmode     :[0m [93mdrift[0m
+  [97mduration :[0m 60.0 s
+  [97mrate     :[0m 50.0 Hz
+  [97mendpoint :[0m udpout:127.0.0.1:14580
+  [97msensor   :[0m Garmin LiDAR-Lite v3 (5 cm – 40 m, type=0 laser, orientation=25 down)
+[96m------------------------------------------------------------------------[0m
+[94m[*][0m opening MAVLink endpoint udpout:127.0.0.1:14580 …
+[92m[+][0m MAVLink connection opened (sysid=1, compid=191).
+[95m[>] injecting 'drift' @ 50.0 Hz for 60.0s … (Ctrl+C to abort)[0m
+  [2mt=  1.00s[0m  [93mdrift      [0m  dist=[97m  2.60 m[0m  q=100  sent=51
+  [2mt=  2.00s[0m  [93mdrift      [0m  dist=[97m  2.70 m[0m  q=100  sent=101
+  [2mt=  3.02s[0m  [93mdrift      [0m  dist=[97m  2.80 m[0m  q=100  sent=152
+  [2mt=  4.04s[0m  [93mdrift      [0m  dist=[97m  2.90 m[0m  q=100  sent=203
+  [2mt=  5.04s[0m  [93mdrift      [0m  dist=[97m  3.00 m[0m  q=100  sent=253
+  [2mt=  6.06s[0m  [93mdrift      [0m  dist=[97m  3.11 m[0m  q=100  sent=304
+  [2mt=  7.08s[0m  [93mdrift      [0m  dist=[97m  3.21 m[0m  q=100  sent=355
+  [2mt=  8.10s[0m  [93mdrift      [0m  dist=[97m  3.31 m[0m  q=100  sent=406
+  [2mt=  9.10s[0m  [93mdrift      [0m  dist=[97m  3.41 m[0m  q=100  sent=456
+  [2mt= 10.10s[0m  [93mdrift      [0m  dist=[97m  3.51 m[0m  q=100  sent=506
+  [2mt= 11.10s[0m  [93mdrift      [0m  dist=[97m  3.61 m[0m  q=100  sent=556
+  [2mt= 12.12s[0m  [93mdrift      [0m  dist=[97m  3.71 m[0m  q=100  sent=607
+  [2mt= 13.14s[0m  [93mdrift      [0m  dist=[97m  3.81 m[0m  q=100  sent=658
+  [2mt= 14.14s[0m  [93mdrift      [0m  dist=[97m  3.91 m[0m  q=100  sent=708
+  [2mt= 15.16s[0m  [93mdrift      [0m  dist=[97m  4.02 m[0m  q=100  sent=759
+  [2mt= 16.16s[0m  [93mdrift      [0m  dist=[97m  4.12 m[0m  q=100  sent=809
+  [2mt= 17.18s[0m  [93mdrift      [0m  dist=[97m  4.22 m[0m  q=100  sent=860
+  [2mt= 18.20s[0m  [93mdrift      [0m  dist=[97m  4.32 m[0m  q=100  sent=911
+  [2mt= 19.22s[0m  [93mdrift      [0m  dist=[97m  4.42 m[0m  q=100  sent=962
+  [2mt= 20.22s[0m  [93mdrift      [0m  dist=[97m  4.52 m[0m  q=100  sent=1012
+  [2mt= 21.22s[0m  [93mdrift      [0m  dist=[97m  4.62 m[0m  q=100  sent=1062
+  [2mt= 22.24s[0m  [93mdrift      [0m  dist=[97m  4.72 m[0m  q=100  sent=1113
+  [2mt= 23.24s[0m  [93mdrift      [0m  dist=[97m  4.82 m[0m  q=100  sent=1163
+  [2mt= 24.24s[0m  [93mdrift      [0m  dist=[97m  4.92 m[0m  q=100  sent=1213
+  [2mt= 25.24s[0m  [93mdrift      [0m  dist=[97m  5.02 m[0m  q=100  sent=1263
+  [2mt= 26.26s[0m  [93mdrift      [0m  dist=[97m  5.13 m[0m  q=100  sent=1314
+  [2mt= 27.28s[0m  [93mdrift      [0m  dist=[97m  5.23 m[0m  q=100  sent=1365
+  [2mt= 28.28s[0m  [93mdrift      [0m  dist=[97m  5.33 m[0m  q=100  sent=1415
+  [2mt= 29.30s[0m  [93mdrift      [0m  dist=[97m  5.43 m[0m  q=100  sent=1466
+  [2mt= 30.30s[0m  [93mdrift      [0m  dist=[97m  5.53 m[0m  q=100  sent=1516
+  [2mt= 31.32s[0m  [93mdrift      [0m  dist=[97m  5.63 m[0m  q=100  sent=1567
+  [2mt= 32.34s[0m  [93mdrift      [0m  dist=[97m  5.73 m[0m  q=100  sent=1618
+  [2mt= 33.34s[0m  [93mdrift      [0m  dist=[97m  5.83 m[0m  q=100  sent=1668
+  [2mt= 34.34s[0m  [93mdrift      [0m  dist=[97m  5.93 m[0m  q=100  sent=1718
+  [2mt= 35.36s[0m  [93mdrift      [0m  dist=[97m  6.04 m[0m  q=100  sent=1769
+  [2mt= 36.38s[0m  [93mdrift      [0m  dist=[97m  6.14 m[0m  q=100  sent=1820
+  [2mt= 37.38s[0m  [93mdrift      [0m  dist=[97m  6.24 m[0m  q=100  sent=1870
+  [2mt= 38.40s[0m  [93mdrift      [0m  dist=[97m  6.34 m[0m  q=100  sent=1921
+  [2mt= 39.40s[0m  [93mdrift      [0m  dist=[97m  6.44 m[0m  q=100  sent=1971
+  [2mt= 40.42s[0m  [93mdrift      [0m  dist=[97m  6.54 m[0m  q=100  sent=2022
+  [2mt= 41.42s[0m  [93mdrift      [0m  dist=[97m  6.64 m[0m  q=100  sent=2072
+  [2mt= 42.44s[0m  [93mdrift      [0m  dist=[97m  6.74 m[0m  q=100  sent=2123
+  [2mt= 43.46s[0m  [93mdrift      [0m  dist=[97m  6.85 m[0m  q=100  sent=2174
+  [2mt= 44.46s[0m  [93mdrift      [0m  dist=[97m  6.95 m[0m  q=100  sent=2224
+  [2mt= 45.46s[0m  [93mdrift      [0m  dist=[97m  7.05 m[0m  q=100  sent=2274
+  [2mt= 46.48s[0m  [93mdrift      [0m  dist=[97m  7.15 m[0m  q=100  sent=2325
+  [2mt= 47.50s[0m  [93mdrift      [0m  dist=[97m  7.25 m[0m  q=100  sent=2376
+  [2mt= 48.50s[0m  [93mdrift      [0m  dist=[97m  7.35 m[0m  q=100  sent=2426
+  [2mt= 49.52s[0m  [93mdrift      [0m  dist=[97m  7.45 m[0m  q=100  sent=2477
+  [2mt= 50.54s[0m  [93mdrift      [0m  dist=[97m  7.55 m[0m  q=100  sent=2528
+  [2mt= 51.54s[0m  [93mdrift      [0m  dist=[97m  7.65 m[0m  q=100  sent=2578
+  [2mt= 52.56s[0m  [93mdrift      [0m  dist=[97m  7.76 m[0m  q=100  sent=2629
+  [2mt= 53.58s[0m  [93mdrift      [0m  dist=[97m  7.86 m[0m  q=100  sent=2680
+  [2mt= 54.58s[0m  [93mdrift      [0m  dist=[97m  7.96 m[0m  q=100  sent=2730
+  [2mt= 55.58s[0m  [93mdrift      [0m  dist=[97m  8.06 m[0m  q=100  sent=2780
+  [2mt= 56.58s[0m  [93mdrift      [0m  dist=[97m  8.16 m[0m  q=100  sent=2830
+  [2mt= 57.60s[0m  [93mdrift      [0m  dist=[97m  8.26 m[0m  q=100  sent=2881
+  [2mt= 58.60s[0m  [93mdrift      [0m  dist=[97m  8.36 m[0m  q=100  sent=2931
+  [2mt= 59.62s[0m  [93mdrift      [0m  dist=[97m  8.46 m[0m  q=100  sent=2982
+[92m[✓][0m injection finished: 3000 samples in 60.00s (50.0 Hz effective)
+[92m[✓][0m log written to /home/borys/CS/final_project/lidar_scripts/logs/injector_20260423_121451_drift.csv

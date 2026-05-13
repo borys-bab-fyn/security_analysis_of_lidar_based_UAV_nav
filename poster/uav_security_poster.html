@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Non-GPS/GPS-denied Drones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @page {
+            size: 594mm 841mm;
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            width: 594mm;
+            height: 841mm;
+            margin: 0;
+            padding: 40mm;
+            position: relative;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 4px solid #B01C2E;
+            padding-bottom: 20px;
+        }
+        
+        .title {
+            font-size: 56px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 28px;
+            color: #444;
+            margin-bottom: 20px;
+            line-height: 1.4;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .meta-info {
+            font-size: 20px;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        .content {
+            column-count: 3;
+            column-gap: 30px;
+            column-fill: auto;
+        }
+        
+        .section {
+            break-inside: avoid;
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 26px;
+            font-weight: bold;
+            color: #B01C2E;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #B01C2E;
+        }
+        
+        .section-content {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+        
+        .section-content p {
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        
+        li {
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+        
+        .highlight-box {
+            background: #f5f5f5;
+            border-left: 4px solid #B01C2E;
+            padding: 15px;
+            margin: 15px 0;
+            break-inside: avoid;
+        }
+        
+        .highlight-box-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #B01C2E;
+            margin-bottom: 8px;
+        }
+        
+        .attack-pathway {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 12px;
+            margin: 10px 0;
+            font-size: 15px;
+            break-inside: avoid;
+        }
+        
+        .attack-pathway-title {
+            font-weight: bold;
+            color: #e65100;
+            margin-bottom: 4px;
+        }
+        
+        .defense-item {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 12px;
+            margin: 10px 0;
+            font-size: 15px;
+            break-inside: avoid;
+        }
+        
+        .system-diagram {
+            background: #e3f2fd;
+            border: 2px solid #1976d2;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: center;
+            break-inside: avoid;
+        }
+        
+        .system-diagram-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1565c0;
+            margin-bottom: 10px;
+        }
+        
+        .system-layer {
+            background: white;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #0d47a1;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 30px;
+            left: 40mm;
+            right: 40mm;
+            border-top: 3px solid #B01C2E;
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .university-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #B01C2E;
+        }
+        
+        .department-text {
+            font-size: 16px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .key-findings {
+            background: #ffebee;
+            border: 2px solid #c62828;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            break-inside: avoid;
+        }
+        
+        .key-findings-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #c62828;
+            margin-bottom: 10px;
+        }
+        
+        strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+        
+        .numbered-list {
+            counter-reset: item;
+            list-style-type: none;
+            margin-left: 0;
+        }
+        
+        .numbered-list li {
+            counter-increment: item;
+            margin-bottom: 8px;
+        }
+        
+        .numbered-list li:before {
+            content: counter(item) ". ";
+            font-weight: bold;
+            color: #B01C2E;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">Hacking Non-GPS/GPS-denied Drones</div>
+        <div class="subtitle">Security Analysis of LiDAR-based UAV Navigation and MAVLink Communication Protocols</div>
+        <div class="meta-info">School of Computer Science, University of Bristol</div>
+    </div>
+    
+    <div class="content">
+        <!-- Introduction -->
+        <div class="section">
+            <div class="section-title">1. Introduction</div>
+            <div class="section-content">
+                <p>Unmanned Aerial Vehicles (UAVs) increasingly rely on non-GPS navigation in environments where satellite signals are unavailable or unreliable. In this project, a <strong>Holybro X500 running PX4</strong> uses LiDAR-based localisation instead of GPS. While this improves navigation in indoor or GPS-denied settings, it also introduces new attack surfaces at both the sensor layer and the communication/protocol layer.</p>
+                <p>This research investigates how an attacker could disrupt UAV behaviour not necessarily by fully hijacking the drone, but by <strong>corrupting navigation inputs, causing estimator instability, or triggering unsafe autonomy and failsafe decisions</strong>.</p>
+            </div>
+        </div>
+        
+        <!-- Research Motivation -->
+        <div class="section">
+            <div class="section-title">2. Research Motivation</div>
+            <div class="section-content">
+                <p>Two major security concerns were identified:</p>
+                
+                <div class="highlight-box">
+                    <div class="highlight-box-title">LiDAR Sensor Attacks</div>
+                    LiDAR can potentially be disrupted through spoofing, jamming, or environmental deception. These attacks may cause false range readings, dropped measurements, scan-matching failure, or localisation drift.
+                </div>
+                
+                <div class="highlight-box">
+                    <div class="highlight-box-title">MAVLink Timing Vulnerabilities</div>
+                    A reviewed paper on <em>Timestamp Manipulation-Based GPS Spoofing Attacks on the MAVLink 2.0 Protocol</em> showed that MAVLink 2.0 signing can be undermined under certain conditions by manipulating time synchronization. The attack does not directly grant full control, but enables replay, denial of service, and persistent disruption.
+                </div>
+            </div>
+        </div>
+        
+        <!-- System Architecture -->
+        <div class="section">
+            <div class="section-title">3. System Architecture</div>
+            <div class="section-content">
+                <p>The target system consists of:</p>
+                <ul>
+                    <li>Holybro X500 UAV</li>
+                    <li>PX4 autopilot</li>
+                    <li>LiDAR-based navigation</li>
+                    <li>External odometry/pose estimation (companion computer)</li>
+                    <li>MAVLink communication with Ground Control Station (GCS)</li>
+                </ul>
+                
+                <div class="system-diagram">
+                    <div class="system-diagram-title">Security Layer Architecture</div>
+                    <div class="system-layer">Communication Layer: MAVLink Timing & Authentication</div>
+                    <div class="system-layer">Control Layer: PX4 Estimator & Failsafe Logic</div>
+                    <div class="system-layer">Perception Layer: LiDAR & State Estimation</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Research Questions -->
+        <div class="section">
+            <div class="section-title">4. Key Research Questions</div>
+            <div class="section-content">
+                <ol class="numbered-list">
+                    <li>How can LiDAR-based navigation be disrupted in a GPS-denied PX4 UAV?</li>
+                    <li>What are the safety impacts of spoofed, delayed, stale, or dropped LiDAR-derived measurements?</li>
+                    <li>Can timing inconsistencies in MAVLink or external odometry create estimator failures or dangerous control decisions?</li>
+                    <li>Which countermeasures are most effective for improving resilience?</li>
+                </ol>
+            </div>
+        </div>
+        
+        <!-- Literature Findings -->
+        <div class="section">
+            <div class="section-title">5. MAVLink Protocol Findings</div>
+            <div class="section-content">
+                <p>The reviewed MAVLink paper demonstrated that:</p>
+                <ul>
+                    <li>MAVLink 2.0 message signing depends on a <strong>monotonically increasing timestamp</strong></li>
+                    <li>If time synchronization is influenced by spoofed GPS input, attackers may push timestamps forward</li>
+                </ul>
+                
+                <div class="key-findings">
+                    <div class="key-findings-title">This Can Cause:</div>
+                    <ul>
+                        <li>Replay attacks under limited conditions</li>
+                        <li>Denial of service</li>
+                        <li>Timestamp overflow / persistent communication disruption</li>
+                        <li><strong>However:</strong> Cannot provide arbitrary command injection or total drone takeover without the signing key</li>
+                    </ul>
+                </div>
+                
+                <p><strong>Reframed Threat Model:</strong> The main danger is loss of trusted communication and safe autonomy, not necessarily classic "remote hijacking".</p>
+            </div>
+        </div>
+        
+        <!-- Attack Pathways -->
+        <div class="section">
+            <div class="section-title">6. Theoretical Attack Pathways</div>
+            <div class="section-content">
+                
+                <div class="attack-pathway">
+                    <div class="attack-pathway-title">1. LiDAR Spoofing / False Returns</div>
+                    Injected or misleading optical signals may cause incorrect distance reporting, affecting altitude or obstacle perception.
+                </div>
+                
+                <div class="attack-pathway">
+                    <div class="attack-pathway-title">2. LiDAR Jamming / Measurement Dropout</div>
+                    Overloading the sensor or creating interference may cause range updates to disappear or become unreliable.
+                </div>
+                
+                <div class="attack-pathway">
+                    <div class="attack-pathway-title">3. Environmental Deception</div>
+                    Reflective surfaces, repetitive geometry, or adversarial scene structure may confuse LiDAR odometry/SLAM.
+                </div>
+                
+                <div class="attack-pathway">
+                    <div class="attack-pathway-title">4. Latency and Stale Odometry</div>
+                    Heavy computation or disrupted sensing can delay external pose updates, creating timestamp inconsistencies.
+                </div>
+                
+                <div class="attack-pathway">
+                    <div class="attack-pathway-title">5. MAVLink Timing Manipulation</div>
+                    Protocol-level timing attacks may interfere with trusted communication streams.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Security Impact -->
+        <div class="section">
+            <div class="section-title">7. Security Impact on PX4</div>
+            <div class="section-content">
+                <p>In a LiDAR-based PX4 system, successful attacks may not directly "take over" the drone, but can produce serious outcomes:</p>
+                <ul>
+                    <li>Position drift</li>
+                    <li>Localisation loss</li>
+                    <li>Unsafe mode switching</li>
+                    <li>Failsafe triggers</li>
+                    <li>Rejected external odometry</li>
+                    <li>Oscillatory or unstable behaviour</li>
+                    <li>Mission failure</li>
+                </ul>
+                <p><strong>Critical Security Goals:</strong> Availability, timing integrity, and estimator trust.</p>
+            </div>
+        </div>
+        
+        <!-- Experimental Direction -->
+        <div class="section">
+            <div class="section-title">8. Experimental Direction</div>
+            <div class="section-content">
+                <p>The planned controlled evaluation focuses on:</p>
+                <ul>
+                    <li>Bench or lab-based testing on owned hardware</li>
+                    <li><strong>Monitoring:</strong> distance_sensor, vehicle_local_position, estimator_status</li>
+                    <li><strong>Observing:</strong> innovation spikes, covariance growth, sensor dropouts, odometry rejection, state transitions and failsafe behaviour</li>
+                </ul>
+                <p>The goal is to <strong>measure how navigation degrades under attack-like conditions</strong> rather than to demonstrate offensive takeover.</p>
+            </div>
+        </div>
+        
+        <!-- Proposed Defenses -->
+        <div class="section">
+            <div class="section-title">9. Proposed Defences</div>
+            <div class="section-content">
+                
+                <div class="defense-item">
+                    <strong>Bound timestamp jumps</strong> – Prevent large temporal discontinuities
+                </div>
+                
+                <div class="defense-item">
+                    <strong>Decouple signing time from GNSS</strong> – Use independent time source
+                </div>
+                
+                <div class="defense-item">
+                    <strong>Stronger key management</strong> – Enhanced cryptographic practices
+                </div>
+                
+                <div class="defense-item">
+                    <strong>Odometry integrity checks</strong> – Validate external vision/odometry messages
+                </div>
+                
+                <div class="defense-item">
+                    <strong>MAVLink gateway validation</strong> – Add timing/quality checks
+                </div>
+                
+                <div class="defense-item">
+                    <strong>Multi-sensor cross-checking</strong> – Implement graceful degradation
+                </div>
+            </div>
+        </div>
+        
+        <!-- Research Contribution -->
+        <div class="section">
+            <div class="section-title">10. Research Contribution</div>
+            <div class="section-content">
+                <p>This dissertation aims to contribute a <strong>combined security and safety analysis</strong> of LiDAR-based UAV navigation under both:</p>
+                <ul>
+                    <li>Sensor-layer disruption</li>
+                    <li>Protocol-layer timing manipulation</li>
+                </ul>
+                <p>The main contribution is not proving full hijack, but showing how <strong>subtle integrity and timing failures can cascade into unsafe autonomy</strong> in PX4-based UAVs.</p>
+            </div>
+        </div>
+        
+        <!-- Conclusion -->
+        <div class="section">
+            <div class="section-title">11. Conclusion</div>
+            <div class="section-content">
+                <p>LiDAR-based, GPS-denied UAV navigation improves operational flexibility but introduces new vulnerabilities. Both sensor deception and MAVLink timing weaknesses can undermine navigation reliability, estimator trust, and safe autonomous behaviour.</p>
+                <p><strong>Strengthening UAV resilience therefore requires protection across both the physical sensing layer and the communication layer.</strong></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="logo-section">
+            <div>
+                <div class="university-text">University of BRISTOL</div>
+                <div class="department-text">School of Computer Science</div>
+            </div>
+        </div>
+        <div style="text-align: right; font-size: 14px; color: #666;">
+            <div style="font-weight: bold; color: #B01C2E; margin-bottom: 5px;">Research Project 2026</div>
+            <div>LiDAR-based UAV Security Analysis</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+[96m[1m========================================================================[0m
+[96m[1m  PX4 SITL LiDAR Injection Attack Toolkit[0m
+[96m[1m========================================================================[0m
+  [97mmode     :[0m [93mnoisy[0m
+  [97mduration :[0m 30.0 s
+  [97mrate     :[0m 50.0 Hz
+  [97mendpoint :[0m udpout:127.0.0.1:14580
+  [97msensor   :[0m Garmin LiDAR-Lite v3 (5 cm – 40 m, type=0 laser, orientation=25 down)
+[96m------------------------------------------------------------------------[0m
+[94m[*][0m opening MAVLink endpoint udpout:127.0.0.1:14580 …
+[92m[+][0m MAVLink connection opened (sysid=1, compid=191).
+[95m[>] injecting 'noisy' @ 50.0 Hz for 30.0s … (Ctrl+C to abort)[0m
+  [2mt=  1.00s[0m  [93mnoisy      [0m  dist=[97m  2.53 m[0m  q=100  sent=51
+  [2mt=  2.00s[0m  [93mnoisy      [0m  dist=[97m  2.28 m[0m  q=100  sent=101
+  [2mt=  3.02s[0m  [93mnoisy      [0m  dist=[97m  2.44 m[0m  q=100  sent=152
+  [2mt=  4.04s[0m  [93mnoisy      [0m  dist=[97m  1.43 m[0m  q=100  sent=203
+  [2mt=  5.04s[0m  [93mnoisy      [0m  dist=[97m  2.29 m[0m  q=100  sent=253
+  [2mt=  6.04s[0m  [93mnoisy      [0m  dist=[97m  2.75 m[0m  q=100  sent=303
+  [2mt=  7.06s[0m  [93mnoisy      [0m  dist=[97m  2.99 m[0m  q=100  sent=354
+  [2mt=  8.08s[0m  [93mnoisy      [0m  dist=[97m  2.58 m[0m  q=100  sent=405
+  [2mt=  9.08s[0m  [93mnoisy      [0m  dist=[97m  1.80 m[0m  q=100  sent=455
+  [2mt= 10.08s[0m  [93mnoisy      [0m  dist=[97m  3.64 m[0m  q=100  sent=505
+  [2mt= 11.10s[0m  [93mnoisy      [0m  dist=[97m  3.18 m[0m  q=100  sent=556
+  [2mt= 12.12s[0m  [93mnoisy      [0m  dist=[97m  2.09 m[0m  q=100  sent=607
+  [2mt= 13.12s[0m  [93mnoisy      [0m  dist=[97m  2.94 m[0m  q=100  sent=657
+  [2mt= 14.12s[0m  [93mnoisy      [0m  dist=[97m  1.98 m[0m  q=100  sent=707
+  [2mt= 15.14s[0m  [93mnoisy      [0m  dist=[97m  2.03 m[0m  q=100  sent=758
+  [2mt= 16.14s[0m  [93mnoisy      [0m  dist=[97m  2.62 m[0m  q=100  sent=808
+  [2mt= 17.14s[0m  [93mnoisy      [0m  dist=[97m  2.22 m[0m  q=100  sent=858
+  [2mt= 18.14s[0m  [93mnoisy      [0m  dist=[97m  2.66 m[0m  q=100  sent=908
+  [2mt= 19.16s[0m  [93mnoisy      [0m  dist=[97m  2.96 m[0m  q=100  sent=959
+  [2mt= 20.18s[0m  [93mnoisy      [0m  dist=[97m  2.73 m[0m  q=100  sent=1010
+  [2mt= 21.18s[0m  [93mnoisy      [0m  dist=[97m  2.03 m[0m  q=100  sent=1060
+  [2mt= 22.18s[0m  [93mnoisy      [0m  dist=[97m  2.11 m[0m  q=100  sent=1110
+  [2mt= 23.20s[0m  [93mnoisy      [0m  dist=[97m  2.15 m[0m  q=100  sent=1161
+  [2mt= 24.20s[0m  [93mnoisy      [0m  dist=[97m  1.83 m[0m  q=100  sent=1211
+  [2mt= 25.20s[0m  [93mnoisy      [0m  dist=[97m  2.44 m[0m  q=100  sent=1261
+  [2mt= 26.20s[0m  [93mnoisy      [0m  dist=[97m  2.19 m[0m  q=100  sent=1311
+  [2mt= 27.22s[0m  [93mnoisy      [0m  dist=[97m  2.82 m[0m  q=100  sent=1362
+  [2mt= 28.22s[0m  [93mnoisy      [0m  dist=[97m  2.45 m[0m  q=100  sent=1412
+  [2mt= 29.24s[0m  [93mnoisy      [0m  dist=[97m  2.30 m[0m  q=100  sent=1463
+[92m[✓][0m injection finished: 1500 samples in 30.00s (50.0 Hz effective)
+[92m[✓][0m log written to /home/borys/CS/final_project/lidar_scripts/logs/injector_20260423_122000_noisy.csv

@@ -1,0 +1,76 @@
+================================================================================
+         LiDAR Testing Results Analysis — testing_results.xlsx
+================================================================================
+
+1. FILE STRUCTURE & DATA SUMMARY
+--------------------------------------------------------------------------------
+- Single sheet: "Sheet1"
+- 35 rows × 8 columns (including headers and summary row)
+- Two test categories side-by-side:
+
+  A) REFLECTIVE SURFACE TEST (columns B–F)
+     - Row 1: Section header
+     - Row 2: Actual/reference distances for each angle (22.6 cm at 0°, 29.0 cm at 45°)
+     - Row 3: Angle labels — 0°, 15°, 30°, 45°, 60°
+     - Rows 4–33: 30 repeated sensor distance readings (cm)
+       * Data present only for 0° (col B) and 45° (col E)
+       * Columns for 15°, 30°, and 60° are empty (no data collected or recorded)
+     - Row 35: Computed mean distances
+
+  B) TRANSPARENT SURFACE TEST (columns G–H)
+     - Row 4: Column headers — "Returned d by sensor" | "Actual Distance"
+     - Rows 5–34: 30 sensor distance readings (cm)
+     - Actual distance: 30.1 ± 0.1 cm (recorded once, constant for all trials)
+     - Row 35: Computed mean distance
+
+  All distance measurements appear to be in centimetres (cm).
+
+
+2. KEY FINDINGS — REFLECTIVE SURFACE TESTS
+--------------------------------------------------------------------------------
+  Angle   | Actual Dist | Mean Sensor | Mean Error | Error %  | Std Dev | Range
+  --------|-------------|-------------|------------|----------|---------|----------
+    0°    |  22.6 cm    |  27.53 cm   | +4.93 cm   | +21.8%   |  4.44   | 18–35
+   45°    |  29.0 cm    |  34.97 cm   | +5.97 cm   | +20.6%   |  1.77   | 33–39
+
+  • The LiDAR sensor consistently OVERESTIMATES distance when measuring
+    reflective surfaces, by roughly +5–6 cm (~21%) at both tested angles.
+  • At 0° incidence the readings are highly variable (SD = 4.44 cm, range
+    spanning 17 cm), indicating the specular reflection sends the beam on
+    unpredictable paths.
+  • At 45° incidence the readings are more tightly clustered (SD = 1.77 cm)
+    but the positive bias is even larger (+5.97 cm). The angled surface
+    produces a more consistent — but still erroneous — return.
+  • No data was recorded for 15°, 30°, or 60° angles, so the full angular
+    dependence cannot be characterised from this dataset.
+
+
+3. KEY FINDINGS — TRANSPARENT SURFACE TESTS
+--------------------------------------------------------------------------------
+  Actual Dist   | Mean Sensor | Mean Error | Error %  | Std Dev | Range
+  --------------|-------------|------------|----------|---------|----------
+  30.1 ± 0.1 cm|  36.63 cm   | +6.53 cm   | +21.7%   |  1.47   | 34–38
+
+  • The sensor again OVERESTIMATES distance, now by +6.53 cm (+21.7%).
+  • The overestimation is the largest of all three test conditions, consistent
+    with the laser partially passing through the transparent material and
+    reflecting off a surface behind or within it.
+  • Variability is moderate (SD = 1.47 cm), similar to the 45° reflective
+    case, suggesting that the transparent surface produces a relatively
+    stable — but inaccurate — return signal.
+  • Every single reading (34–38 cm) exceeds the true distance (30.1 cm);
+    not a single measurement fell at or below the actual value.
+
+
+4. IMPLICATIONS FOR LiDAR VULNERABILITY RESEARCH
+--------------------------------------------------------------------------------
+These results demonstrate that both reflective and transparent surfaces
+introduce systematic positive distance bias (~20–22%) in LiDAR
+measurements, with reflective surfaces at normal incidence also causing
+high measurement variance. This means an adversary could exploit common
+materials — mirrors, glass, polished metal — to make objects appear farther
+away than they actually are, potentially causing LiDAR-dependent systems
+(e.g., autonomous vehicles, security perimeters) to misjudge obstacle
+proximity. The consistency of the bias across all test conditions suggests
+that simple material-based spoofing attacks are feasible without
+sophisticated electronic equipment.

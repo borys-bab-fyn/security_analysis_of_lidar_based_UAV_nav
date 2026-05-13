@@ -1,0 +1,10 @@
+# MAVLink messaging (used by lidar_injector.py and lidar_monitor.py).
+pymavlink>=2.4.37
+
+# PX4 ULog parsing (used by analyze_log.py).
+pyulog>=1.0.1
+
+# Plotting and data handling.
+matplotlib>=3.6
+pandas>=1.5
+numpy>=1.23

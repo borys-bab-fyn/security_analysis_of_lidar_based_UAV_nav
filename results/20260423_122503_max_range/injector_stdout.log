@@ -1,0 +1,58 @@
+[96m[1m========================================================================[0m
+[96m[1m  PX4 SITL LiDAR Injection Attack Toolkit[0m
+[96m[1m========================================================================[0m
+  [97mmode     :[0m [93mmax_range[0m
+  [97mduration :[0m 45.0 s
+  [97mrate     :[0m 50.0 Hz
+  [97mendpoint :[0m udpout:127.0.0.1:14580
+  [97msensor   :[0m Garmin LiDAR-Lite v3 (5 cm – 40 m, type=0 laser, orientation=25 down)
+[96m------------------------------------------------------------------------[0m
+[94m[*][0m opening MAVLink endpoint udpout:127.0.0.1:14580 …
+[92m[+][0m MAVLink connection opened (sysid=1, compid=191).
+[95m[>] injecting 'max_range' @ 50.0 Hz for 45.0s … (Ctrl+C to abort)[0m
+  [2mt=  1.00s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=51
+  [2mt=  2.02s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=102
+  [2mt=  3.02s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=152
+  [2mt=  4.04s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=203
+  [2mt=  5.06s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=254
+  [2mt=  6.06s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=304
+  [2mt=  7.06s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=354
+  [2mt=  8.06s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=404
+  [2mt=  9.08s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=455
+  [2mt= 10.08s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=505
+  [2mt= 11.08s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=555
+  [2mt= 12.10s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=606
+  [2mt= 13.10s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=656
+  [2mt= 14.12s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=707
+  [2mt= 15.12s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=757
+  [2mt= 16.14s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=808
+  [2mt= 17.16s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=859
+  [2mt= 18.18s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=910
+  [2mt= 19.20s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=961
+  [2mt= 20.22s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1012
+  [2mt= 21.24s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1063
+  [2mt= 22.26s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1114
+  [2mt= 23.26s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1164
+  [2mt= 24.26s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1214
+  [2mt= 25.26s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1264
+  [2mt= 26.28s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1315
+  [2mt= 27.28s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1365
+  [2mt= 28.30s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1416
+  [2mt= 29.30s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1466
+  [2mt= 30.32s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1517
+  [2mt= 31.32s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1567
+  [2mt= 32.32s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1617
+  [2mt= 33.34s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1668
+  [2mt= 34.34s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1718
+  [2mt= 35.36s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1769
+  [2mt= 36.36s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1819
+  [2mt= 37.38s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1870
+  [2mt= 38.40s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1921
+  [2mt= 39.40s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=1971
+  [2mt= 40.42s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=2022
+  [2mt= 41.42s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=2072
+  [2mt= 42.42s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=2122
+  [2mt= 43.44s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=2173
+  [2mt= 44.46s[0m  [93mmax_range  [0m  dist=[97m 40.00 m[0m  q=100  sent=2224
+[92m[✓][0m injection finished: 2250 samples in 45.00s (50.0 Hz effective)
+[92m[✓][0m log written to /home/borys/CS/final_project/lidar_scripts/logs/injector_20260423_122503_max_range.csv
